@@ -4,6 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>How to Work LOUIS</title>
+  <style>
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      font-size: 1.2em;
+      color: #0073e6;
+    }
+    /* Content styling */
+    .content {
+      margin-top: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .content img {
+      max-width: 100%;
+      height: auto;
+    }
+    .step {
+      margin-bottom: 20px;
+    }
+    .step h3 {
+      color: #0073e6;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -12,9 +35,45 @@
       <a href="how-to-work-louis.html" style="font-weight: bold;">How to Work LOUIS</a>
     </nav>
   </header>
-  <main>
+  <main class="content">
     <h1>How to Work LOUIS</h1>
     <p>The following guide will help you operate and understand LOUIS.</p>
+
+    <!-- Step 1 -->
+    <div class="step">
+      <h3>Step 1: Power On LOUIS</h3>
+      <img src="assets/images/power-on.jpg" alt="Power on LOUIS">
+      <p>On top of the battery, there are two switches. Turn on the switch with the green wire to start.</p>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step">
+      <h3>Step 2: Connect to LouisTheRover</h3>
+      <img src="assets/images/connect" alt="Connect to LouisTheRover">
+      <p>On your controller device of choice, open the wi-fi settings, connect to LouisTheRover, and type in the password (Password:LouisLSU).</p>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step">
+      <h3>Step 3: Type in the IP Address</h3>
+      <img src="assets/images/ipaddress.jpg" alt="Type in the IP Address">
+      <p>On your browser of choice, navigate to the IP address port 5000 of the Jetson Nano, which is 10.42.0.1:5000</p>
+    </div>
+
+ <!-- Step 4 -->
+    <div class="step">
+      <h3>Step 4: Confirm Live Camera Feed</h3>
+      <img src="assets/images/camera.jpg" alt="Confirm Live Camera Feed">
+      <p>You should see the controller GUI and have a live camera feed as shown.</p>
+    </div>
+
+ <!-- Step 5 -->
+    <div class="step">
+      <h3>Step 5: Toggle the Second Switch</h3>
+      <img src="assets/images/switch.jpg" alt="Toggle the Second Switch">
+      <p>Then, you can toggle the second switch on the battery, and LOUIS is ready to control! </p>
+    </div>
+
   </main>
 </body>
 </html>
