@@ -15,11 +15,6 @@
   <main>
     <h1>How to Work LOUIS</h1>
     <p>The following guide will help you operate and understand LOUIS.</p>
-    <!-- Link to the PDF -->
-    <p><a href="assets/how-to-work-louis.pdf" target="_blank">Download the PDF Instructions</a></p>
-
-    <!-- Embed the PDF -->
-    <iframe src="assets/how-to-work-louis.pdf"></iframe>
   </main>
 </body>
 </html>
