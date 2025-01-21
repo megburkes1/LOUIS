@@ -1,0 +1,14 @@
+/* General body styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Heading styles */
+h1 {
+  font-family: 'Merriweather', serif;
+  color: #0056b3;
+}
