@@ -28,12 +28,6 @@
       border: 2px solid #0073e6; /* Optional: Adds a border around images */
     }
 
-     /* Adjust specific images that are too tall */
-    #power-on, #connect, #switch {
-      max-height: 200px !important; /* Sets a max height for these images */
-      width: auto !important;       /* Keeps the width proportional */
-    }
-
     /* Styling for each step */
     .step {
       margin-bottom: 30px; /* Adds spacing between steps */
@@ -65,35 +59,35 @@
     <!-- Step 1 -->
     <div class="step">
       <h3>Step 1: Power On LOUIS</h3>
-      <img src="assets/power-on.jpg" alt="Power on LOUIS">
+      <img id="power-on" src="assets/power-on.jpg" alt="Power on LOUIS" style="max-height: 400px; width: auto; margin:0 auto; display: block;">
       <p>On top of the battery, there are two switches. Turn on the switch with the green wire to start.</p>
     </div>
 
     <!-- Step 2 -->
     <div class="step">
       <h3>Step 2: Connect to LouisTheRover</h3>
-      <img src="assets/connect.jpg" alt="Connect to LouisTheRover">
+      <img id="connect" src="assets/connect.jpg" alt="Connect to LouisTheRover" style="max-height: 400px; width: auto; margin:0 auto; display: block;">
       <p>On your controller device of choice, open the wi-fi settings, connect to LouisTheRover, and type in the password (Password:LouisLSU).</p>
     </div>
 
     <!-- Step 3 -->
     <div class="step">
       <h3>Step 3: Type in the IP Address</h3>
-      <img src="assets/ipaddress.jpg" alt="Type in the IP Address">
+      <img id= "ipaddress" src="assets/ipaddress.jpg" alt="Type in the IP Address" style="max-height: 600px; width: auto; margin:0 auto; display: block;">
       <p>On your browser of choice, navigate to the IP address port 5000 of the Jetson Nano, which is 10.42.0.1:5000</p>
     </div>
 
     <!-- Step 4 -->
     <div class="step">
       <h3>Step 4: Confirm Live Camera Feed</h3>
-      <img src="assets/camera.jpg" alt="Confirm Live Camera Feed">
+      <img id= "camera" src="assets/camera.jpg" alt="Confirm Live Camera Feed" style="max-height: 600px; width: auto; margin:0 auto; display: block;">
       <p>You should see the controller GUI and have a live camera feed as shown.</p>
     </div>
 
     <!-- Step 5 -->
     <div class="step">
       <h3>Step 5: Toggle the Second Switch</h3>
-      <img src="assets/switch.jpg" alt="Toggle the Second Switch">
+      <img id="switch" src="assets/switch.jpg" alt="Toggle the Second Switch" style="max-height: 400px; width: auto; margin:0 auto; display: block;">
       <p>Then, you can toggle the second switch on the battery, and LOUIS is ready to control!</p>
     </div>
   </main>
