@@ -5,26 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>How to Work LOUIS</title>
   <style>
+    /* Navigation styling */
     nav a {
       margin-right: 15px;
       text-decoration: none;
       font-size: 1.2em;
       color: #0073e6;
     }
+
     /* Content styling */
     .content {
       margin-top: 20px;
       font-family: Arial, sans-serif;
     }
+
+    /* Styling for images */
     .content img {
-      max-width: 100%;
-      height: auto;
+      display: block;            /* Makes the image a block element */
+      max-width: 600px;          /* Sets the maximum width */
+      height: auto;              /* Maintains the aspect ratio */
+      margin: 20px auto;         /* Centers the image and adds vertical spacing */
+      border: 2px solid #0073e6; /* Optional: Adds a border around images */
     }
+
+    /* Styling for each step */
     .step {
-      margin-bottom: 20px;
+      margin-bottom: 30px; /* Adds spacing between steps */
     }
+
     .step h3 {
       color: #0073e6;
+      text-align: center; /* Centers the step title */
+    }
+
+    /* Paragraph styling */
+    .step p {
+      text-align: center; /* Centers the step description */
+      margin: 10px auto;
     }
   </style>
 </head>
@@ -60,20 +77,19 @@
       <p>On your browser of choice, navigate to the IP address port 5000 of the Jetson Nano, which is 10.42.0.1:5000</p>
     </div>
 
- <!-- Step 4 -->
+    <!-- Step 4 -->
     <div class="step">
       <h3>Step 4: Confirm Live Camera Feed</h3>
       <img src="assets/camera.jpg" alt="Confirm Live Camera Feed">
       <p>You should see the controller GUI and have a live camera feed as shown.</p>
     </div>
 
- <!-- Step 5 -->
+    <!-- Step 5 -->
     <div class="step">
       <h3>Step 5: Toggle the Second Switch</h3>
       <img src="assets/switch.jpg" alt="Toggle the Second Switch">
-      <p>Then, you can toggle the second switch on the battery, and LOUIS is ready to control! </p>
+      <p>Then, you can toggle the second switch on the battery, and LOUIS is ready to control!</p>
     </div>
-
   </main>
 </body>
 </html>
