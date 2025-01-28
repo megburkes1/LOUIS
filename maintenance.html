@@ -3,33 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maintenance Instructions</title>
+  <title>LOUIS - Maintenance Instructions</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f9f9f9; 
+      color: #333;
     }
-    nav {
-      background-color: #f4f4f4;
-      padding: 10px;
+    header {
+      background-color: #005f73;
+      color: white;
+      padding: 1rem;
       text-align: center;
+      font-size: 1.5rem;
+   }
+    nav {
+      background-color: #94d2bd;
+      padding: 0.5rem;
+      display:flex;
+      justify-content: center;
     }
     nav a {
-      margin-right: 15px;
-      text-decoration: none;
-      font-size: 1.2em;
-      color: #0073e6;
+       text-decoration: none;
+       color: #005f73;
+       margin: 0 1rem;
+       font-weight: bold;
     }
-    nav a.active {
-      font-weight: bold;
-      color: #005bb5;
+   nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
     }
     h1 {
       text-align: center;
-      margin-top: 20px;
-      color: #333;
+      color: #005f73;
     }
+     th, td {
+      padding: 1rem;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+ th {
+      background-color: #e9f5f5;
+      font-weight: bold;
+     }
+ tr:nth-child(even) {
+       background-color: #f2f2f2;
+      }
+.link {
+       color: #0077cc;
+       text-decoration: none;
+     }
+.link:hover {
+       text-decoration: underline;
+     }
     .content {
       max-width: 800px;
       margin: 20px auto;
@@ -53,14 +83,13 @@
   </style>
 </head>
 <body>
-  <header>
+  <header>LOUIS Project - Maintenance Instructions</header>
     <nav>
       <a href="index.html">Home</a>
       <a href="how-to-work-louis.html">How to Work LOUIS</a>
-      <a href="maintenance.html" style="font-weight: bold;">Maintenance Instructions</a>
+      <a href="maintenance.html">Maintenance Instructions</a>
       <a href="parts-list.html">Parts List</a>
     </nav>
-  </header>
 
   <main>
     <h1>Maintenance Instructions</h1>
