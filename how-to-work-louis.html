@@ -12,73 +12,55 @@
       padding: 0;
     }
 
-    /* Header styling */
-    header {
-      background: linear-gradient(to right, #005f73, #0a9396); /* Blue-green gradient */
+    /* Title strip styling */
+    .title-strip {
+      background-color: #005f73; /* Dark blue-green */
       color: white;
       padding: 1rem;
       text-align: center;
       font-size: 1.5rem;
       font-family: Arial, sans-serif;
-      border-radius: 8px 8px 0 0; /* Rounded top corners */
-    }
-
-    /* Navigation styling */
-    nav {
-      text-align: center;
-      margin-top: 1rem;
-    }
-
-    nav a {
-      text-decoration: none;
-      font-size: 1.2rem;
-      color: #d8f3dc; /* Light mint green */
-      margin-right: 15px;
-    }
-
-    nav a.active {
       font-weight: bold;
-      color: #b7e4c7; /* Slightly darker mint green */
     }
 
-    /* Tabs styling */
-    .tab-container {
+    /* Navigation tabs */
+    .tabs {
       display: flex;
-      justify-content: center;
-      margin-top: 1rem;
-    }
-
-    .tab-container button {
-      background-color: #d8f3dc; /* Mint green background */
-      color: #005f73; /* Blue text */
-      border: 1px solid #0a9396;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      font-family: Arial, sans-serif;
-      font-size: 1rem;
-      border-radius: 8px 8px 0 0;
-      margin: 0 5px; /* Spacing between tabs */
-    }
-
-    .tab-container button.active {
-      background-color: #b7e4c7; /* Slightly darker mint green for active tab */
-      color: #001219; /* Darker blue for active tab text */
-    }
-
-    /* Tab content styling */
-    .tab-content {
       background-color: #d8f3dc; /* Mint green */
-      padding: 1rem;
-      border: 1px solid #0a9396;
-      border-top: none; /* Removes border overlap with tabs */
+      border-bottom: 2px solid #0a9396; /* Blue-green border */
+    }
+
+    .tabs a {
+      flex: 1;
+      text-align: center;
+      padding: 0.75rem;
+      text-decoration: none;
+      font-size: 1.1rem;
       font-family: Arial, sans-serif;
-      font-size: 1rem;
-      border-radius: 0 0 8px 8px; /* Rounded bottom corners */
-      margin: 0 auto;
-      max-width: 800px; /* Keeps the content tidy */
+      color: #005f73; /* Blue text */
+      border-right: 1px solid #0a9396;
+    }
+
+    .tabs a:last-child {
+      border-right: none;
+    }
+
+    .tabs a.active {
+      background-color: #b7e4c7; /* Slightly darker mint green */
+      color: #001219; /* Darker blue */
+      font-weight: bold;
     }
 
     /* Content section styling */
+    .content {
+      padding: 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #d8f3dc; /* Mint green background */
+      border: 1px solid #0a9396;
+      border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+    }
+
     .content h1 {
       text-align: center;
       color: #005f73; /* Blue-green text for headings */
@@ -93,69 +75,81 @@
     /* Image styling */
     .content img {
       display: block;
-      max-width: 600px;
+      max-width: 300px; /* Smaller image width */
       height: auto;
       margin: 20px auto;
-      border: 2px solid #0073e6;
+      border: 2px solid #0073e6; /* Optional: Adds border */
+    }
+
+    /* Step section styling */
+    .step {
+      margin-bottom: 30px;
+    }
+
+    .step h3 {
+      color: #0073e6; /* Blue headings for steps */
+      text-align: center;
+    }
+
+    .step p {
+      text-align: center;
+      margin: 10px auto;
     }
   </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="how-to-work-louis.html" class="active">How to Work LOUIS</a>
-      <a href="maintenance.html">Maintenance Instructions</a>
-      <a href="parts-list.html">Parts List</a>
-    </nav>
-  </header>
-
-  <div class="tab-container">
-    <button class="active">How to Work LOUIS</button>
-    <button>Parts List</button>
-    <button>Maintenance</button>
+  <!-- Title strip -->
+  <div class="title-strip">
+    LOUIS Project - How to Work LOUIS
   </div>
 
-  <div class="tab-content">
-    <main class="content">
-      <h1>How to Work LOUIS</h1>
-      <p>The following guide will help you operate and understand LOUIS.</p>
+  <!-- Tabs -->
+  <div class="tabs">
+    <a href="index.html">Home</a>
+    <a href="how-to-work-louis.html" class="active">How to Work LOUIS</a>
+    <a href="maintenance.html">Maintenance Instructions</a>
+    <a href="parts-list.html">Parts List</a>
+  </div>
 
-      <!-- Step 1 -->
-      <div class="step">
-        <h3>Step 1: Power On LOUIS</h3>
-        <img id="power-on" src="assets/power-on.jpg" alt="Power on LOUIS">
-        <p>On top of the battery, there are two switches. Turn on the switch with the green wire to start.</p>
-      </div>
+  <!-- Main content -->
+  <div class="content">
+    <h1>How to Work LOUIS</h1>
+    <p>The following guide will help you operate and understand LOUIS.</p>
 
-      <!-- Step 2 -->
-      <div class="step">
-        <h3>Step 2: Connect to LouisTheRover</h3>
-        <img id="connect" src="assets/connect.jpg" alt="Connect to LouisTheRover">
-        <p>On your controller device of choice, open the wi-fi settings, connect to LouisTheRover, and type in the password (Password:LouisLSU).</p>
-      </div>
+    <!-- Step 1 -->
+    <div class="step">
+      <h3>Step 1: Power On LOUIS</h3>
+      <img id="power-on" src="assets/power-on.jpg" alt="Power on LOUIS">
+      <p>On top of the battery, there are two switches. Turn on the switch with the green wire to start.</p>
+    </div>
 
-      <!-- Step 3 -->
-      <div class="step">
-        <h3>Step 3: Type in the IP Address</h3>
-        <img id="ipaddress" src="assets/ipaddress.jpg" alt="Type in the IP Address">
-        <p>On your browser of choice, navigate to the IP address port 5000 of the Jetson Nano, which is 10.42.0.1:5000</p>
-      </div>
+    <!-- Step 2 -->
+    <div class="step">
+      <h3>Step 2: Connect to LouisTheRover</h3>
+      <img id="connect" src="assets/connect.jpg" alt="Connect to LouisTheRover">
+      <p>On your controller device of choice, open the wi-fi settings, connect to LouisTheRover, and type in the password (Password:LouisLSU).</p>
+    </div>
 
-      <!-- Step 4 -->
-      <div class="step">
-        <h3>Step 4: Confirm Live Camera Feed</h3>
-        <img id="camera" src="assets/camera.jpg" alt="Confirm Live Camera Feed">
-        <p>You should see the controller GUI and have a live camera feed as shown.</p>
-      </div>
+    <!-- Step 3 -->
+    <div class="step">
+      <h3>Step 3: Type in the IP Address</h3>
+      <img id="ipaddress" src="assets/ipaddress.jpg" alt="Type in the IP Address">
+      <p>On your browser of choice, navigate to the IP address port 5000 of the Jetson Nano, which is 10.42.0.1:5000</p>
+    </div>
 
-      <!-- Step 5 -->
-      <div class="step">
-        <h3>Step 5: Toggle the Second Switch</h3>
-        <img id="switch" src="assets/switch.jpg" alt="Toggle the Second Switch">
-        <p>Then, you can toggle the second switch on the battery, and LOUIS is ready to control!</p>
-      </div>
-    </main>
+    <!-- Step 4 -->
+    <div class="step">
+      <h3>Step 4: Confirm Live Camera Feed</h3>
+      <img id="camera" src="assets/camera.jpg" alt="Confirm Live Camera Feed">
+      <p>You should see the controller GUI and have a live camera feed as shown.</p>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="step">
+      <h3>Step 5: Toggle the Second Switch</h3>
+      <img id="switch" src="assets/switch.jpg" alt="Toggle the Second Switch">
+      <p>Then, you can toggle the second switch on the battery, and LOUIS is ready to control!</p>
+    </div>
   </div>
 </body>
 </html>
