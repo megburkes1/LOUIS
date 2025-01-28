@@ -10,68 +10,38 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
     }
-
-    /* Title strip styling */
-    .title-strip {
-      background-color: #005f73; /* Dark blue-green */
+ header {
+      background-color: #005f73;
       color: white;
       padding: 1rem;
       text-align: center;
       font-size: 1.5rem;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-    }
-
-    /* Navigation tabs */
-    .tabs {
+   }
+ nav {
+      background-color: #94d2bd;
+      padding: 0.5rem;
       display: flex;
-      background-color: #d8f3dc; /* Mint green */
-      border-bottom: 2px solid #0a9396; /* Blue-green border */
+      justify-content: center;
+   }
+nav a {
+       text-decoration: none;
+       color: #005f73;
+       margin: 0 1rem;
+       font-weight: bold;
     }
-
-    .tabs a {
-      flex: 1;
+nav a:hover {
+      text-decoration: underline;
+    }
+main {
+      padding: 2rem;
+    }
+h1 {
       text-align: center;
-      padding: 0.75rem;
-      text-decoration: none;
-      font-size: 1.1rem;
-      font-family: Arial, sans-serif;
-      color: #005f73; /* Blue text */
-      border-right: 1px solid #0a9396;
-    }
-
-    .tabs a:last-child {
-      border-right: none;
-    }
-
-    .tabs a.active {
-      background-color: #b7e4c7; /* Slightly darker mint green */
-      color: #001219; /* Darker blue */
-      font-weight: bold;
-    }
-
-    /* Content section styling */
-    .content {
-      padding: 1rem;
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #d8f3dc; /* Mint green background */
-      border: 1px solid #0a9396;
-      border-radius: 0 0 8px 8px; /* Rounded bottom corners */
-    }
-
-    .content h1 {
-      text-align: center;
-      color: #005f73; /* Blue-green text for headings */
-    }
-
-    .content p {
-      text-align: center;
-      margin: 0 auto;
-      font-size: 1.1rem;
-    }
-
+      color: #005f73;
+  }
     /* Image styling */
     .content img {
       display: block;
@@ -81,20 +51,6 @@
       border: 2px solid #0073e6; /* Optional: Adds border */
     }
 
-    /* Step section styling */
-    .step {
-      margin-bottom: 30px;
-    }
-
-    .step h3 {
-      color: #0073e6; /* Blue headings for steps */
-      text-align: center;
-    }
-
-    .step p {
-      text-align: center;
-      margin: 10px auto;
-    }
   </style>
 </head>
 <body>
