@@ -59,6 +59,46 @@
       text-align: center; /* Centers the step description */
       margin: 10px auto;
     }
+    /* Styling the header */
+header {
+    background: linear-gradient(to right, #005f73, #0a9396); /* Blue-green gradient */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+}
+
+/* Styling the tabs */
+.tab-container button {
+    background-color: #d8f3dc; /* Mint green background */
+    color: #005f73; /* Blue tab text */
+    border: 1px solid #0a9396;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Active tab button */
+.tab-container button.active {
+    background-color: #b7e4c7; /* Slightly darker mint green */
+    color: #001219; /* Darker blue for the active tab text */
+}
+
+/* Tab content panel */
+.tab-content {
+    background-color: #d8f3dc; /* Mint green */
+    padding: 1rem;
+    border: 1px solid #0a9396;
+    border-top: none; /* Removes border overlap with tabs */
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+}
+
   </style>
 </head>
 <body>
