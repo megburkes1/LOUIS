@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <input type="text" id="searchBar" placeholder="Search for parts..." onkeyup="searchParts()">
     <title>LOUIS - Parts List</title>
     <style>
         body {
@@ -541,6 +542,18 @@
                     <td><a class="link" href="https://www.amazon.com/Socket-Screws-Stainless-Wrench-Length/dp/B072MBLJ9C/ref=sr_1_2?crid=VC2NQ7NTPNHG&dib=eyJ2IjoiMSJ9.8SkFq_WllaZKYP5ldNCzlIhXc1Uj2jotgos6qrbLYGL1_UhNxgJYAsIup66dFQB7s79tRtARVdwlWhlcwMdC2-nLFFcslDK32l0O6keOuZPKgtkJYRhafUNxXEh3ynjQZ6fjp_oiyDchBUpT5MtiXV-uArh3fMIjt4Q7eaHlXvRtWWfwr3vZo7QQGZHzO8QcbTfIUt5W247ksp73qxXhfcqSQVz5nQqeFbC2creoMi0.LTLz3ZP4Ty8Q_rolCehvhDHZbz7DwYYsisqSrXLBE_s&dib_tag=se&keywords=4-40%2Bx%2B1%2F8%22%2Bsocket%2Bset%2Bscrews%2Bcup%2Bpoint%2Bstainless%2Bsteel%2B10%2Bpack%2Bwith%2B.050%2Bhex%2Bkey%2Bwrench%2B11&qid=1738703390&sprefix=4-40%2Bx%2B1%2F8%2Bsocket%2Bset%2Bscrews%2Bcup%2Bpoint%2Bstainless%2Bsteel%2B10%2Bpack%2Bwith%2B.050%2Bhex%2Bkey%2Bwrench%2B11%2Caps%2C273&sr=8-2&th=1" target="_blank">View Product</a></td>
                     <td>Stainless steel, .050 hex key wrench 11, cup point</td>
                 </tr>
+                <script>
+function searchParts() {
+    let input = document.getElementById("searchBar").value.toLowerCase();
+    let table = document.getElementById("partsTable");
+    let rows = table.getElementsByTagName("tr");
+
+    for (let i = 1; i < rows.length; i++) {  // Start from 1 to skip headers
+        let rowText = rows[i].textContent || rows[i].innerText;
+        rows[i].style.display = rowText.toLowerCase().includes(input) ? "" : "none";
+    }
+}
+</script>
             </tbody>
         </table>
     </main>
