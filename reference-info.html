@@ -82,11 +82,34 @@ h1 {
         .download-link:hover {
             background-color: #003d4c;
         }
-    .container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: left;
-        }
+     .columns-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    }
+    .column {
+      flex: 1;
+      max-width: 400px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+      text-align: left;
+    }
+    .column h2 {
+      text-align: center;
+      color: #005f73;
+    }
+     @media (max-width: 850px) {
+      .columns-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .column {
+        max-width: 90%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -102,7 +125,8 @@ h1 {
     <h1>Reference Info</h1>
     <p>Explore the PowerPoints and other documents shown below for more background information.</p>
 
-    <div class="container">
+    <div class="columns-container">
+    <div class="column">
     <h2>Project #57</h2>
     <h3>CPFR:</h3>
     <a class="download-link" href="assets/Project_57_CPFR.pdf" download>Download PDF</a>
@@ -116,7 +140,7 @@ h1 {
     <a class="download-link" href="assets/Team57_Invoices.pdf" download>Download PDF</a>
     </div>
 
-    <div class="container">
+    <div class="column">
     <h2>Project #66</h2>
     <h3>EATB:</h3>
     <a class="download-link" href="assets/Project66_EATB.pdf" download>Download PDF</a>
@@ -136,6 +160,7 @@ h1 {
     <a class="download-link" href="assets/Project66_PP.pptx" download>Download PowerPoint</a>
     <h3>PS:</h3>
     <a class="download-link" href="assets/Project66_PS.pptx" download>Download PowerPoint</a>
+    </div>
     </div>
   </main>
 </body>
