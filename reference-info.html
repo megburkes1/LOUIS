@@ -86,10 +86,12 @@ h1 {
       display: flex;
       justify-content: center;
       gap: 20px;
-      flex-wrap: wrap; /* Allows wrapping on smaller screens */
+      flex-wrap: nowrap;
+      overflow-x:auto;
     }
     .column {
       flex: 1;
+      min-width: 300px;
       max-width: 400px;
       background-color: white;
       padding: 20px;
@@ -103,11 +105,10 @@ h1 {
     }
      @media (max-width: 850px) {
       .columns-container {
-        flex-direction: column;
-        align-items: center;
+        overflow-x: auto;
       }
       .column {
-        max-width: 90%;
+        min-width: 300 px;
       }
     }
   </style>
