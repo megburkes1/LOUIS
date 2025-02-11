@@ -70,7 +70,7 @@ h1 {
       text-align: center; /* Centers the step description */
       margin: 10px auto;
     }
-    .download-link {
+   /* .download-link {
             display: inline-block;
             margin-top: 10px;
             padding: 10px;
@@ -81,7 +81,22 @@ h1 {
         }
         .download-link:hover {
             background-color: #003d4c;
-        }
+        }*/
+    .button-link {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      background-color: #ee6c4d;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+.button-link:hover {
+      background-color: #d64b32;
+    }
+    
      .columns-container {
       display: flex;
       justify-content: space-between;
@@ -93,8 +108,8 @@ h1 {
     }
     .column {
       flex: 1;
-      min-width: 45%;
-      max-width: 45%;
+      min-width: 30%;
+      max-width: 30%;
       background-color: white;
       padding: 20px;
       border-radius: 8px;
@@ -166,6 +181,11 @@ h1 {
     <a class="download-link" href="assets/Project66_PP.pptx" download>Download PowerPoint</a>
     <h3>PS:</h3>
     <a class="download-link" href="assets/Project66_PS.pptx" download>Download PowerPoint</a>
+    </div>
+      <div class="column">
+        <h2>Battery Monitoring</h2>
+        <p>Monitor the Enduro 36V battery life with the Enduro Power App.</p>
+        <a class="button-link" href="https://www.enduropower.com/pages/app" target="_blank">Open Enduro Power App</a>
     </div>
     </div>
   </main>
