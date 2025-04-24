@@ -78,15 +78,14 @@ h1 {
       text-align: center; /* Centers the step description */
       margin: 10px auto;
     }
-    @media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
+nav {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
 
-  nav a {
-    margin: 0.5rem 0;
-  }
+nav a {
+  display: inline-block;
 }
   </style>
 </head>
