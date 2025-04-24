@@ -42,6 +42,16 @@ nav a {
        display: inline-block;
        flex: 0 0 auto;
     }
+    .nav-inner {
+  display: inline-flex;
+  justify-content: center;
+}
+
+@media (min-width: 601px) {
+  nav {
+    justify-content: center;
+  }
+}
 nav a:hover {
       text-decoration: underline;
     }
@@ -96,12 +106,14 @@ h1 {
       LOUIS Project - How to Work LOUIS
     </header>
   <nav>
+    <div class="nav-inner">
     <a href="index.html">Home</a>
     <a href="how-to-work-louis.html">How to Work LOUIS</a>
     <a href="maintenance.html">Maintenance Instructions</a>
     <a href="parts-list.html">Parts List</a>
     <a href="reference-info.html">Reference Information</a>
     <a href="how-to-disassemble-louis.html">How to Disassemble LOUIS</a>
+    </div>
   </nav>
 
   <!-- Main content -->
