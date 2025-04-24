@@ -25,12 +25,16 @@
       padding: 0.5rem;
       display: flex;
       justify-content: center;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
    }
 nav a {
        text-decoration: none;
        color: #005f73;
        margin: 0 1rem;
        font-weight: bold;
+       display: inline-block;
     }
 nav a:hover {
       text-decoration: underline;
@@ -78,15 +82,6 @@ h1 {
       text-align: center; /* Centers the step description */
       margin: 10px auto;
     }
-nav {
-  overflow-x: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-
-nav a {
-  display: inline-block;
-}
   </style>
 </head>
 <body>
