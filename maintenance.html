@@ -22,14 +22,23 @@
     nav {
       background-color: #94d2bd;
       padding: 0.5rem;
-      display:flex;
-      justify-content: center;
-    }
-    nav a {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width:none;
+   }
+nav::-webkit-scrollbar {
+  display: none;
+}
+nav a {
        text-decoration: none;
        color: #005f73;
        margin: 0 1rem;
        font-weight: bold;
+       display: inline-block;
+       flex: 0 0 auto;
     }
    nav a:hover {
       text-decoration: underline;
